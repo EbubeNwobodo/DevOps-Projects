@@ -1,0 +1,11 @@
+name: Workflow command
+on: [push]
+
+jobs:
+    workflow-commands:
+        runs-on: ubutu-latest
+        steps:
+            - name: Setting an error message
+              run: echo "::error::Missing semicolomn"
+            - name: Setting error message with param
+              run: echo "::error title=Error title,file=app.js"  
