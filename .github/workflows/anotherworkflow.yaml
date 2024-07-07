@@ -1,0 +1,14 @@
+name: Event Triggered Action
+on:
+    push:
+    pull_request:
+        types: [opened, assigned, reopened, synchronize]
+
+jobs:
+    checkout-test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                echo $GITHUB_SHA
+                echo $GITHUB_REF
+            - uses: actions/checkout@v3
