@@ -11,18 +11,24 @@
   
 - **Documentation**:
   ![Jekins Download](media/Jekins/download.png)
-  ![Java 17 Download]()
+  ![Java 17 Download](media/Jekins/java17_download.png)
 
 
 ### Initial Configuration
 - **Complete the Initial Setup Wizard**:
   1. Once Jenkins is installed, navigate to `http://localhost:8080` or your cloud server's IP.
   2. Unlock Jenkins by entering the initial admin password (found in the Jenkins home directory).
+- **Documentation**:
+  ![Java installation](media/Jekins/Java_installation.png)
+  ![Jekins Port Testing](media/Jekins/jekins_port_test.png)
+  ![Jekins File path setup](media/Jekins/installation_filepath_setup.png)
+  ![Jekins Installation](media/Jekins/jekins%20installation%20setup.png)
   
 - **Install Suggested Plugins**:
   - Jenkins provides a set of recommended plugins that streamline the setup process.
   - During the initial configuration, opt to **install suggested plugins**.  
-  - **Document**: Provide screenshots showing plugin installation progress.
+  - **Document**:
+    ![Plugin installation](media/Jekins/rcommended_plugin_install.png)
 
 - **Create Admin User and Configure Security**:
   1. After the plugins are installed, create an **admin user**.
@@ -30,7 +36,8 @@
   3. Optionally, enable **role-based access control** (RBAC) and configure Multi-Factor Authentication (MFA) for added security.
   
 - **Documentation**:
-  
+  ![Admin User Setup](media/Jekins/jekins%20installation%20setup.png)
+  ![Get Jekins Secrete](media/Jekins/jeskins_initial%20secrete.png)
 
 # Exploring and Installing Essential Jenkins Plugins
 
@@ -54,6 +61,7 @@
   - Go to **Manage Jenkins > Manage Plugins > Available** and search for "Pipeline".
   - Install the plugin.
 - **Documentation**:
+  ![Plugin Screenshot](media/Jekins/Plugins.png)
 
 ## 3. Email Extension Plugin
 - **Purpose**: Allows you to configure custom email notifications when builds fail, succeed, or reach specific stages.
@@ -64,6 +72,7 @@
   - Search for "Email Extension" under **Available Plugins** and install it.
   - Restart Jenkins and configure the plugin in build jobs.
 - **Documentation**:
+  ![Plugin Screenshot](media/Jekins/Plugins.png)
 
 ## 4. JUnit Plugin
 - **Purpose**: Enables Jenkins to process and display JUnit test results. It's essential for projects using unit tests written in Java or any language that generates JUnit-compatible reports.
@@ -74,6 +83,7 @@
   - Search for "JUnit Plugin" under **Available Plugins** and install it.
   - Configure it under job settings to publish test results.
 - **Documentation**:
+  ![Plugin Screenshot](media/Jekins/Plugins.png)
 
 ## 5. Blue Ocean Plugin
 - **Purpose**: Provides a modern, user-friendly UI for Jenkins, making it easier to visualize pipelines, stages, and build statuses.
@@ -83,7 +93,7 @@
 - **Installation**:
   - Search for "Blue Ocean" in the plugin manager and install it.
 - **Documentation**:
-
+  ![Plugin Screenshot](media/Jekins/Plugins.png)
 ---
 
 ### Installation Steps for Each Plugin:
