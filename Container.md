@@ -67,7 +67,6 @@ Docker is a platform designed to automate the deployment, scaling, and managemen
 2. **Wait for Docker to Initialize**:
    - The Docker whale icon should appear in the system tray (bottom-right corner).
    - Docker may take a few moments to start for the first time.
-
 ### Step 4: Verify the Installation
 
 1. **Open Command Prompt (CMD) or PowerShell**:
@@ -76,3 +75,17 @@ Docker is a platform designed to automate the deployment, scaling, and managemen
 2. **Check Docker Version**:
    ```bash
    docker --version
+**Document**
+![Docker Version](media/Docker/docker_version.png)
+
+## Docker Hands-on
+Using the contents contained in [My-App](.my-app), the [Dockerfile](my-app/Dockerfile) shows the configuration of the container.
+![Docker Build](media/Docker/docker_build_terminal.png)
+![Docker Run](media/Docker/docker_run_terminal.png)
+![Container](media/Docker/dock_desktop.png)
+### **Result**
+![App](media/Docker/apppage.png)
+
+## Docker Network
+Checkout the configuration in the [Docker-Compose](my-app/docker-compose.yaml)
+![Compose Screenshot](media/Docker/docker_network.png)
