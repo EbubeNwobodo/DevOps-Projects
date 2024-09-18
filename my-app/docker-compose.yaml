@@ -1,0 +1,19 @@
+version: '3'
+services:
+  container1:
+    image: alpine
+    container_name: container1
+    command: ash -c "while true; do sleep 1000; done"
+    networks:
+      - my-bridge-network
+
+  container2:
+    image: alpine
+    container_name: container2
+    command: ash -c "while true; do sleep 1000; done"
+    networks:
+      - my-bridge-network
+
+networks:
+  my-bridge-network:
+    driver: bridge
