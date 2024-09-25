@@ -236,6 +236,7 @@ helm install grafana grafana/grafana --namespace monitoring
 ```bash
 kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
+![Grafana Password Decode](media/Kubernetes/grafana_password_decode.png)
 - **Access Grafana Dashboard**:
 
     Port forward Grafana to access it on your browser:
@@ -244,6 +245,7 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
     ```
     Open http://localhost:3000 in your browser.
     Log in using admin as the username and the password you retrieved earlier.
+    ![Grafana](media/Kubernetes/grafana_login_page.png)
 #### Configure Grafana Dashboards for Kubernetes Metrics
 - **Add Prometheus as a Data Source**:
 
@@ -251,6 +253,7 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
     Click on Add data source and select Prometheus.
     Use the Prometheus service URL in Kubernetes (typically http://prometheus-server.monitoring.svc.cluster.local:9090).
     Click Save & Test to verify the connection.
+    ![Add data source](media/Kubernetes/grafana_add_datasource.png)
 - **Import Kubernetes Dashboards**:
 
     Go to Dashboard > Import.
