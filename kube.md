@@ -254,6 +254,7 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
     Use the Prometheus service URL in Kubernetes (typically http://prometheus-server.monitoring.svc.cluster.local:9090).
     Click Save & Test to verify the connection.
     ![Add data source](media/Kubernetes/grafana_add_datasource.png)
+    ![Chose source](media/Kubernetes/grafana_prometheus.png)
 - **Import Kubernetes Dashboards**:
 
     Go to Dashboard > Import.
