@@ -65,6 +65,7 @@ After installation run
 ```bash
 minikube start
 ```
+![Minikube Start](media/Kubernetes/minikube_run_success.png)
 This command will start a minikube server on your PC, depending on the available virtualization software on your PC, the VM will either be created in Hyper-V, VirtualBox, etc.
 Now your environment is all set to start running kubernetes clusters locally on your PC.
 
@@ -100,16 +101,19 @@ Check if the services are running and exposing the application
 ```bash
 kubectl get svc
 ```
+![Kubectl](media/Kubernetes/kuber_service_PS.png)
 Get the webserver URL
 ```bash
 minikube service webserver-service
 ```
+![Kubectl](media/Kubernetes/kuber_service_PS.png)
 ### Helm
 
 Insalling helm using chocolatey
 ```PowerShell
 choco install kubernetes-helm
 ```
+![Install helm](media/Kubernetes/helm_install.png)
 Verify installation
 ```bash
 helm version
@@ -136,12 +140,15 @@ helm install my-webapp-release ./my-webapp-chart
 *my-webapp-release*: The name of Helm release
 
 *./my-webapp-chart*: The Helm chart directory
+![Helm install chart](media/Kubernetes/hlem_deploy.png)
 
 Check Pod and service
 ```bash
 kubectl get pods
 kubectl get svc
 ```
+![Helm pods](media/Kubernetes/helm_pod.png)
+![Helm Service](media/Kubernetes/helm_service.png)
 ## Compare Helm Deployment with Raw Manifests
 #### Key Differences:
 #### Ease of Management:
@@ -158,10 +165,12 @@ kubectl get svc
     ```bash
     helm upgrade my-webapp-release ./my-webapp-chart
     ```
+    ![Helm upgrade](media/Kubernetes/helm_upgrade.png)
     To rollback a release:
     ```bash
     helm rollback my-webapp-release 1
     ```
+    ![Helm rollback](media/Kubernetes/helm_roleback.png)
 - **Raw Manifests**: 
     You would need to manually update each manifest and apply changes using kubectl. Rolling back would involve manually reverting changes.
 
