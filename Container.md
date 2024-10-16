@@ -10,6 +10,7 @@ The core idea behind containerization is to isolate applications from the host s
 
 One of the primary advantages of containerization is **environment consistency**. Because containers bundle all dependencies required to run the application, there are no discrepancies between different environments. Developers no longer have to worry about the phrase "it works on my machine" since containers ensure that the same application will run identically across development, testing, and production environments.
 
+
 Another key advantage is **scalability**. Containers are lightweight, with minimal overhead, allowing many containers to run on a single host. This makes it easy to scale applications by deploying multiple container instances across a cluster. Tools like Kubernetes automate the orchestration and scaling of containers, enabling applications to handle variable workloads seamlessly.
 
 Containerization also enhances **resource efficiency**. Unlike traditional virtual machines (VMs), containers share the host system's operating system, which makes them more efficient in terms of CPU, memory, and storage usage. This lightweight nature makes containers faster to start, stop, and replicate compared to VMs, improving overall system performance.
